@@ -1,3 +1,5 @@
+package Logica;
+
 public abstract class Producto {
     public abstract String consumir();
     public String toString() {

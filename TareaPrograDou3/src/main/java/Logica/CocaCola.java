@@ -1,6 +1,8 @@
-public class Fanta extends Bebida{
+package Logica;
+
+public class CocaCola extends Bebida{
     public String consumir(){
-        return "fanta";
+        return "cocacola";
     }
     public String toString(){
         return super.toString();

@@ -1,3 +1,5 @@
+package Logica;
+
 public class Comprador {
     private String sabor;
     private int vuelto = 0;

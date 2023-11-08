@@ -1,3 +1,5 @@
+package GUI;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,7 +9,12 @@ public class PanelPrincipal extends JPanel{
     public PanelPrincipal (){
         exp = new PanelExpendedor();
         com = new PanelComprador();
-        this.setBackground(Color.CYAN);
+        this.setSize(1080,720);
+        this.setBackground(Color.GRAY);
+
+        this.add(exp, BorderLayout.EAST);
+        this.add(com, BorderLayout.WEST);
+
     }
     public void paint(Graphics g){
         super.paint(g);

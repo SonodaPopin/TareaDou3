@@ -1,6 +1,8 @@
-public class Moneda1000 extends Moneda implements Comparable<Moneda>{
+package Logica;
+
+public class Moneda500 extends Moneda implements Comparable<Moneda>{
     public int getValor(){
-        return 1000;
+        return 500;
     }
     public int compareTo(Moneda o) {
         if (this.getValor() > o.getValor()) {
@@ -15,3 +17,4 @@ public class Moneda1000 extends Moneda implements Comparable<Moneda>{
         return super.toString();
     }
 }
+

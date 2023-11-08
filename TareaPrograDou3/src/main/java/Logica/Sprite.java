@@ -1,9 +1,10 @@
-public class Super8 extends Dulce{
+package Logica;
+
+public class Sprite extends Bebida{
     public String consumir(){
-        return "super8";
+        return "sprite";
     }
     public String toString(){
         return super.toString();
     }
 }
-

@@ -1,8 +1,11 @@
-public class Sprite extends Bebida{
+package Logica;
+
+public class Snicker extends Dulce{
     public String consumir(){
-        return "sprite";
+        return "snicker";
     }
     public String toString(){
         return super.toString();
     }
 }
+

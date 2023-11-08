@@ -1,3 +1,5 @@
+package Logica;
+
 public abstract class Moneda implements Comparable<Moneda>{
     public abstract int getValor();
 

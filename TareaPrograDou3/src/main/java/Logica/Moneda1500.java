@@ -1,3 +1,5 @@
+package Logica;
+
 public class Moneda1500 extends Moneda implements Comparable<Moneda>{
     public int getValor() {
         return 1500;

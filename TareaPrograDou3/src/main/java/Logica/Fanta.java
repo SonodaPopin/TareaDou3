@@ -1,9 +1,10 @@
-public class Snicker extends Dulce{
+package Logica;
+
+public class Fanta extends Bebida{
     public String consumir(){
-        return "snicker";
+        return "fanta";
     }
     public String toString(){
         return super.toString();
     }
 }
-

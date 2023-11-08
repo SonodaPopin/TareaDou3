@@ -1,3 +1,5 @@
+package Logica;
+
 public class PagoInsuficienteException extends RuntimeException{
 
     private static final long serialVersionUID = 2L;

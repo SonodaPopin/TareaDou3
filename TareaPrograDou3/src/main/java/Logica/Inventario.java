@@ -1,3 +1,5 @@
+package Logica;
+
 public enum Inventario {
     COCACOLA(500),
     SPRITE(300),
