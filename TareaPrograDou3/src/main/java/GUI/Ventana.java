@@ -5,8 +5,9 @@ import javax.swing.*;
 
 public class Ventana extends JFrame {
     private PanelPrincipal pp;
-    public Ventana(){
-        //super();
+
+    public Ventana() {
+        super();
 
         this.setLayout(new BorderLayout());
         this.setTitle("DOU");
@@ -16,8 +17,8 @@ public class Ventana extends JFrame {
         this.add(pp, BorderLayout.CENTER);
 
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(1080,720);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setSize(1080, 720);
         this.setVisible(true);
     }
 }

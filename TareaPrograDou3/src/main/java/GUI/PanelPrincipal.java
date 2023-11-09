@@ -3,22 +3,26 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
-public class PanelPrincipal extends JPanel{
+public class PanelPrincipal extends JPanel {
     private PanelComprador com;
     private PanelExpendedor exp;
-    public PanelPrincipal (){
+
+    public PanelPrincipal() {
         exp = new PanelExpendedor();
         com = new PanelComprador();
-        this.setSize(1080,720);
-        this.setBackground(Color.GRAY);
 
-        this.add(exp, BorderLayout.EAST);
-        this.add(com, BorderLayout.WEST);
+        this.setLayout(new BorderLayout());
+        this.setPreferredSize(new Dimension(600, 300));
+        this.setBackground(Color.DARK_GRAY);
 
+        this.add(com, BorderLayout.EAST);
+        this.add(exp, BorderLayout.WEST);
     }
-    public void paint(Graphics g){
-        super.paint(g);
-        com.paint(g);
-        exp.paint(g);
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        com.paintComponent(g);
+        exp.paintComponent(g);
     }
 }
