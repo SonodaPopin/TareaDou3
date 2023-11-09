@@ -16,9 +16,11 @@ public class Ventana extends JFrame {
 
         this.add(pp, BorderLayout.CENTER);
 
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1080, 720);
+        this.setSize(540, 720);
         this.setVisible(true);
+        this.setResizable(false);
+        ImageIcon image = new ImageIcon("ingenieria.jpg");
+        this.setIconImage(image.getImage());
     }
 }
