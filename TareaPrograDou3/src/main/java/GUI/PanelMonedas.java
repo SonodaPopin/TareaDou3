@@ -14,7 +14,6 @@ public class PanelMonedas extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        // Dibuja cuatro círculos de diferentes colores
         g.setColor(Color.MAGENTA);
         g.fillOval(50, 30, 50, 50);
         g.setColor(Color.BLACK);

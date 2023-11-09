@@ -11,6 +11,5 @@ public class PanelComprador extends JPanel{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        // Dibujar los componentes relacionados con el comprador aqui
     }
 }

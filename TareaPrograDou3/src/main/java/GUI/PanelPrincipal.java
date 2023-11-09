@@ -12,7 +12,7 @@ public class PanelPrincipal extends JPanel {
         com = new PanelComprador();
 
         this.setLayout(new BorderLayout());
-        this.setPreferredSize(new Dimension(600, 300));
+        this.setPreferredSize(new Dimension(1080, 720));
         this.setBackground(Color.DARK_GRAY);
 
         this.add(com, BorderLayout.EAST);

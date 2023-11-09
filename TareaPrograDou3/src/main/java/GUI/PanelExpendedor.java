@@ -15,9 +15,9 @@ public class PanelExpendedor extends JPanel {
         pm = new PanelMonedas();
         ppr = new PanelProductos();
 
-        // Configura el panel del expendedor
         this.setBackground(Color.PINK);
         this.setLayout(new BorderLayout());
+        this.setPreferredSize(new Dimension(540, 720));
 
         this.add(npexp, BorderLayout.WEST);
         this.add(ppc, BorderLayout.SOUTH);
@@ -33,6 +33,5 @@ public class PanelExpendedor extends JPanel {
         ppc.paintComponents(g);
         ppr.paintComponents(g);
         pm.paintComponents(g);
-        // Dibuja los componentes relacionados con el expendedor aquí
     }
 }
