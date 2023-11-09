@@ -4,8 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 public class PanelComprador extends JPanel{
     public PanelComprador() {
-        // Configura el panel del comprador
+        
         this.setBackground(Color.BLUE);
+        this.setPreferredSize(new Dimension(540, 720));
     }
 
     @Override
