@@ -4,11 +4,22 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PanelProductoComprado extends JPanel implements MouseListener{
-    PanelProductoComprado(){
-        this.setBackground(Color.BLACK);
-        this.setBounds(130, 600, 400, 70);
+public class PanelRellenar extends JPanel implements MouseListener{
+    PanelRellenar(){
+        this.setBounds(205,25,250,50);
         this.addMouseListener(this);
+    }
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        g.setColor(Color.DARK_GRAY);
+        g.fillRect(0, 0, 300, 300);
+
+        g.setColor(Color.WHITE);
+        Font font = new Font("Arial", Font.BOLD, 22);
+        g.setFont(font);
+        g.drawString("Expendedou", 60, 30);
     }
 	@Override
 	public void mouseClicked(MouseEvent e) {
@@ -29,4 +40,3 @@ public class PanelProductoComprado extends JPanel implements MouseListener{
 		this.setBorder(BorderFactory.createEmptyBorder());
 	}
 }
-

@@ -4,11 +4,25 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PanelProductoComprado extends JPanel implements MouseListener{
-    PanelProductoComprado(){
-        this.setBackground(Color.BLACK);
-        this.setBounds(130, 600, 400, 70);
+public class PanelRecibirVuelto extends JPanel implements MouseListener{
+    PanelRecibirVuelto(){
+        this.setBounds(10,470,110,110);
         this.addMouseListener(this);
+    }
+    @Override
+    protected void paintComponent(Graphics g) {
+        Font font = new Font("Arial", Font.BOLD, 10);
+        g.setFont(font);
+        
+        g.setColor(Color.DARK_GRAY);
+        g.fillRect(0, 0, 200, 200);
+
+        g.setColor(Color.GRAY);
+        g.fillOval(20, 30, 70, 70);
+        
+        g.setColor(Color.WHITE);
+        g.drawString("    Retire su vuelto", 5, 20);
+        
     }
 	@Override
 	public void mouseClicked(MouseEvent e) {
@@ -29,4 +43,3 @@ public class PanelProductoComprado extends JPanel implements MouseListener{
 		this.setBorder(BorderFactory.createEmptyBorder());
 	}
 }
-
