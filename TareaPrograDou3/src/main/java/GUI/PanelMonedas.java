@@ -14,25 +14,25 @@ public class PanelMonedas extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.setColor(Color.MAGENTA);
-        g.fillOval(50, 30, 50, 50);
+        g.setColor(Color.CYAN);
+        g.fillOval(50, 20,70 , 70);
         g.setColor(Color.BLACK);
-        g.drawString("100", 70, 65);
+        g.drawString("100", 70, 60);
 
         g.setColor(Color.GREEN);
-        g.fillOval(150, 30, 50, 50);
+        g.fillOval(150, 20, 70, 70);
         g.setColor(Color.BLACK);
-        g.drawString("500", 170, 65);
+        g.drawString("500", 170, 60);
 
         g.setColor(Color.YELLOW);
-        g.fillOval(250, 30, 50, 50);
+        g.fillOval(250, 20, 70, 70);
         g.setColor(Color.BLACK);
-        g.drawString("1000", 270, 65);
+        g.drawString("1000", 270, 60);
 
         g.setColor(Color.ORANGE);
-        g.fillOval(350, 30, 50, 50);
+        g.fillOval(350, 20, 70, 70);
         g.setColor(Color.BLACK);
-        g.drawString("1500", 370, 65);
+        g.drawString("1500", 370, 60);
     }
 }
 
