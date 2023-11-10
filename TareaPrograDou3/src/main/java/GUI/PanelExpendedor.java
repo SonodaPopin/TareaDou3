@@ -3,6 +3,9 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa el panel del expendedor
+ */
 public class PanelExpendedor extends JPanel {
     private PanelProductoComprado ppc;
     private PanelProductos ppr;
@@ -10,6 +13,9 @@ public class PanelExpendedor extends JPanel {
     private PanelExpendedorArriba pea;
     private PanelExpendedorLadoIzq peli;
 
+    /**
+     * Método constructor que crea el panel
+     */
     public PanelExpendedor() {
         ppc = new PanelProductoComprado();
         ppr = new PanelProductos();

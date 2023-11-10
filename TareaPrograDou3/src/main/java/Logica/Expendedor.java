@@ -2,6 +2,9 @@ package Logica;
 
 import java.util.ArrayList;
 
+/**
+ * Clase que representa un expendedor de dulces y bebidas
+ */
 public class Expendedor {
     private int cual;
     Deposito<Moneda> monedas = new Deposito<>();
@@ -11,6 +14,11 @@ public class Expendedor {
     Deposito<Super8> superochos = new Deposito<>();
     Deposito<Snicker> snickers = new Deposito<>();
     private ArrayList<Deposito<? extends Producto>> stock;
+
+    /**
+     * Método constructor que crea un expendedor y le añade productos para vender
+     * @param numProductos cantidad de cada producto para vender
+     */
     public Expendedor(int numProductos){
         stock = new ArrayList<>();
         for(int i = 0; i < numProductos; i++){
@@ -26,6 +34,14 @@ public class Expendedor {
         stock.add(superochos);
         stock.add(snickers);
     }
+
+    /**
+     * Método para comprar un producto del expendedor
+     * @param m moneda con la que se paga
+     * @param cual producto que se desea
+     * @return producto comprado
+     * @throws Exception transacción fallida
+     */
     public Producto comprarProducto(Moneda m, int cual)throws Exception {
         if (m == null) {
             throw new PagoIncorrectoException("Moneda no válida");
@@ -46,6 +62,11 @@ public class Expendedor {
         }
         return stock.get(cual).getT();
     }
+
+    /**
+     * Método para obtener vuelto
+     * @return entrega una moneda
+     */
     public Moneda getVuelto(){
         if (monedas.getCantidad()>0) {
             return monedas.getT();

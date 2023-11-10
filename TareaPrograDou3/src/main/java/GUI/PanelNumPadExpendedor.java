@@ -3,7 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa un panel de numeros de un exéndedor
+ */
 public class PanelNumPadExpendedor extends JPanel {
+    /**
+     * Método constructor que crea el panel
+     */
     PanelNumPadExpendedor(){
         super();
 

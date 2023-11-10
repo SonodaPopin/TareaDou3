@@ -1,5 +1,8 @@
 package Logica;
 
+/**
+ * Clase que representa un producto de tipo CocaCola
+ */
 public class CocaCola extends Bebida{
     public String consumir(){
         return "cocacola";

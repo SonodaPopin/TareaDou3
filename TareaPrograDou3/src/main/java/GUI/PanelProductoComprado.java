@@ -3,7 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa un panel de producto comprado
+ */
 public class PanelProductoComprado extends JPanel {
+    /**
+     * Método constructor que crea el panel
+     */
     PanelProductoComprado(){
         super();
 

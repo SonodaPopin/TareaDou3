@@ -3,7 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa el panel del lado izquierdo de un expendedor
+ */
 public class PanelExpendedorLadoIzq extends JPanel {
+    /**
+     * Método constructor que crea el panel
+     */
     PanelExpendedorLadoIzq(){
         this.setBackground(Color.LIGHT_GRAY);
         this.setPreferredSize(new Dimension(115, 720));
@@ -59,6 +65,13 @@ public class PanelExpendedorLadoIzq extends JPanel {
         drawNumber(g, "0", startX + 35, startY + 105);
     }
 
+    /**
+     * Método que dibuja numeros en el panel
+     * @param g los graficos del objeto
+     * @param number el numero que se quiere dibujar
+     * @param x coordenadas x o horizontales del panel
+     * @param y coordenadas y o verticales del panel
+     */
     private void drawNumber(Graphics g, String number, int x, int y) {
 
         g.setColor(Color.WHITE);

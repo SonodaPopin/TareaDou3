@@ -1,5 +1,8 @@
 package Logica;
 
+/**
+ * Clase que representa un producto de tipo sprite
+ */
 public class Sprite extends Bebida{
     public String consumir(){
         return "sprite";

@@ -3,9 +3,15 @@ package GUI;
 import java.awt.*;
 import javax.swing.*;
 
+/**
+ * Clase que representa una ventana
+ */
 public class Ventana extends JFrame {
     private PanelPrincipal pp;
 
+    /**
+     * Método constructor que crea una ventana
+     */
     public Ventana() {
         super();
 

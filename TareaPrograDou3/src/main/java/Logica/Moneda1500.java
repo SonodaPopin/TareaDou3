@@ -1,5 +1,8 @@
 package Logica;
 
+/**
+ * Clase que representa una moneda de 1500
+ */
 public class Moneda1500 extends Moneda implements Comparable<Moneda>{
     public int getValor() {
         return 1500;

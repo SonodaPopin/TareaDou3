@@ -3,7 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa un panel con monedas
+ */
 public class PanelMonedas extends JPanel {
+    /**
+     * Método constructor que crea el panel
+     */
     PanelMonedas() {
         super();
         this.setBackground(Color.LIGHT_GRAY);

@@ -3,7 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa el panel de la parte de arriba del expendedor
+ */
 public class PanelExpendedorArriba extends JPanel {
+    /**
+     * Método constructor que crea el panel
+     */
     PanelExpendedorArriba(){
         this.setBackground(Color.LIGHT_GRAY);
         this.setPreferredSize(new Dimension(500, 100));
