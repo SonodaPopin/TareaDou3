@@ -10,7 +10,7 @@ public class Ventana extends JFrame {
         super();
 
         this.setLayout(new BorderLayout());
-        this.setTitle("DOU");
+        this.setTitle("Expendedou");
 
         pp = new PanelPrincipal();
 
