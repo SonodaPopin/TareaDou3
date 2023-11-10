@@ -18,12 +18,17 @@ public class PanelExpendedorLadoIzq extends JPanel {
         int startY = (panelHeight - 4 * 35) / 2;
         int startX = (panelWidth - 3 * 35) / 2;
 
+        Font font = new Font("Arial", Font.BOLD, 10);
+        g.setFont(font);
+
         g.setColor(Color.DARK_GRAY);
         g.fillRect(startX, 10, 3 * 35, startY - 60);
 
+        g.setColor(Color.DARK_GRAY);
+        g.fillRect(2, 140, 3 * 35 + 2, startY);
+
         g.setColor(Color.WHITE);
-        Font font = new Font("Arial", Font.BOLD, 10);
-        g.setFont(font);
+        g.drawString("Elija su producto", startX + 7, 155);
         g.drawString("Ingrese su Moneda", startX + 5, 30);
 
         g.setColor(Color.DARK_GRAY);
