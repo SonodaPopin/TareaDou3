@@ -8,15 +8,11 @@ import java.awt.event.*;
  * Clase que representa el numpad del expendedor
  */
 public class PanelNumPad extends JPanel implements MouseListener{
-<<<<<<< HEAD
 	PanelComprador n;
-    PanelNumPad(PanelComprador n){
-=======
     /**
      * Método constructor que crea el panel
      */
-    PanelNumPad(){
->>>>>>> c5495c414f3078cffb7d0f1f9a011a516d773b2d
+    PanelNumPad(PanelComprador n){
         this.setBounds(10,250,110,180);
         this.addMouseListener(this);
         this.n = n;

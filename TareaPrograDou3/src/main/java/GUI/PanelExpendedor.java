@@ -7,23 +7,20 @@ import java.awt.*;
  * Clase que representa el panel del Expendedor
  */
 public class PanelExpendedor extends JPanel{
+	PanelComprador n;
 	private PanelProductos pp;
     private PanelProductoComprado ppc;
     private PanelIngresarMoneda pim;
     private PanelNumPad pnp;
     private PanelRecibirVuelto prv;
     private PanelRellenar pr;
-<<<<<<< HEAD
-    public PanelExpendedor(PanelComprador n) {
-    	pim = new PanelIngresarMoneda(n);
-=======
 
     /**
      * Método constructor que crea el panel
      */
-    public PanelExpendedor() {
-    	pim = new PanelIngresarMoneda();
->>>>>>> c5495c414f3078cffb7d0f1f9a011a516d773b2d
+    public PanelExpendedor(PanelComprador n) {
+    	this.n = n;
+    	pim = new PanelIngresarMoneda(n);
         ppc = new PanelProductoComprado();
         pp = new PanelProductos();
         pnp = new PanelNumPad(n);
