@@ -5,8 +5,15 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/**
+ * Clase que representa el panel donde uno ingresa las monedas
+ */
 public class PanelIngresarMoneda extends JPanel implements MouseListener{
 	JLabel label;
+
+	/**
+	 * Método constructor que crea el panel
+	 */
     PanelIngresarMoneda(){
         this.setBounds(10,100,110,110);
         this.addMouseListener(this);

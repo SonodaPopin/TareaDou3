@@ -3,7 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa el panel de los productos
+ */
 public class PanelProductos extends JPanel {
+    /**
+     * Método constructor que crea el panel
+     */
     PanelProductos() {
         this.setBounds(130,100,400,480);
         this.setBackground(Color.GRAY);

@@ -3,10 +3,16 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Clase que representa el panel principal que va sobre la ventana
+ */
 public class PanelPrincipal extends JPanel {
     private PanelComprador com;
     private PanelExpendedor exp;
 
+    /**
+     * Método constructor que crea el panel
+     */
     public PanelPrincipal() {
         exp = new PanelExpendedor();
         com = new PanelComprador();

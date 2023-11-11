@@ -4,7 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Clase que representa el panel donde va el producto una vez comprado
+ */
 public class PanelProductoComprado extends JPanel implements MouseListener{
+	/**
+	 * Método constructor que crea el panel
+	 */
     PanelProductoComprado(){
         this.setBackground(Color.BLACK);
         this.setBounds(130, 600, 400, 70);

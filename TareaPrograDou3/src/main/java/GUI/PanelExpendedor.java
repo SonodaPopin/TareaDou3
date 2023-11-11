@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Clase que representa el panel del Expendedor
+ */
 public class PanelExpendedor extends JPanel{
 	private PanelProductos pp;
     private PanelProductoComprado ppc;
@@ -11,6 +14,10 @@ public class PanelExpendedor extends JPanel{
     private PanelNumPad pnp;
     private PanelRecibirVuelto prv;
     private PanelRellenar pr;
+
+    /**
+     * Método constructor que crea el panel
+     */
     public PanelExpendedor() {
     	pim = new PanelIngresarMoneda();
         ppc = new PanelProductoComprado();
