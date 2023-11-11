@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PanelExpendedor extends JPanel implements MouseListener{
+public class PanelExpendedor extends JPanel{
 	private PanelProductos pp;
     private PanelProductoComprado ppc;
     private PanelIngresarMoneda pim;
@@ -27,30 +27,6 @@ public class PanelExpendedor extends JPanel implements MouseListener{
         this.add(pp);
         this.add(pnp);
         this.add(prv);
-        this.add(pr);    }
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		System.out.println("hola");
-		
-	}
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+        this.add(pr);    
+        }
 }
