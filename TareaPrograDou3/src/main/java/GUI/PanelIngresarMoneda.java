@@ -6,10 +6,11 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class PanelIngresarMoneda extends JPanel implements MouseListener{
-	JLabel label;
-    PanelIngresarMoneda(){
+	PanelComprador n;
+    PanelIngresarMoneda(PanelComprador n){
         this.setBounds(10,100,110,110);
         this.addMouseListener(this);
+        this.n = n;
     }
     @Override
     protected void paintComponent(Graphics g) {
@@ -29,6 +30,7 @@ public class PanelIngresarMoneda extends JPanel implements MouseListener{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("hola");	
+		n.siMonedas();		
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {	

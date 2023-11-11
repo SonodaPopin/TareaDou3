@@ -2,31 +2,44 @@ package GUI;
 
 import javax.swing.*;
 import java.awt.*;
-
-/**
- * Clase que representa el panel del comprador
- */
 public class PanelComprador extends JPanel{
-    private PanelMonedas pm;
-    private PanelNumPadExpendedor pnexp;
-
-    /**
-     * Método constructor que crea el panel
-     */
-    public PanelComprador() {
-
-        pm = new PanelMonedas();
-        pnexp = new PanelNumPadExpendedor();
-
-        this.setBackground(Color.white);
-        this.setPreferredSize(new Dimension(540, 720));
+	private Moneda100 pm;
+	private Moneda500 pmm;
+	private Moneda1000 pmmm;
+	private Moneda1500 pmmmm;
+	private PanelNumPadExpendedor pnp;
+    public PanelComprador() {       
+        this.setBackground(Color.DARK_GRAY);
+        this.setLayout(null);
+        this.setBounds(540,0,1080,720);
+        pm = new Moneda100(this);
+        pmm = new Moneda500(this);
+        pmmm = new Moneda1000(this);
+        pmmmm = new Moneda1500(this);
+        pnp = new PanelNumPadExpendedor(this);
+    	this.add(pm);
+        this.add(pmm);
+        this.add(pmmm);
+        this.add(pmmmm);
+        this.add(pnp);
     }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-
-        this.add(pm, BorderLayout.NORTH);
-        this.add(pnexp, BorderLayout.CENTER);
+    public void siMonedas() {
+    	pm.mostrar();
+    	pmm.mostrar();
+    	pmmm.mostrar();
+    	pmmmm.mostrar();
+    }
+    public void noMonedas() {
+    	pm.esconder();
+    	pmm.esconder();
+    	pmmm.esconder();
+    	pmmmm.esconder();
+    }
+    public void siNumPad() {
+    	pnp.mostrar();
+    }
+    public void noNumPad() {
+    	pnp.esconder();
     }
 }
+

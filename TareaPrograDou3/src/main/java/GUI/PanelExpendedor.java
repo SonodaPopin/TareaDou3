@@ -2,7 +2,6 @@ package GUI;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class PanelExpendedor extends JPanel{
 	private PanelProductos pp;
@@ -11,11 +10,11 @@ public class PanelExpendedor extends JPanel{
     private PanelNumPad pnp;
     private PanelRecibirVuelto prv;
     private PanelRellenar pr;
-    public PanelExpendedor() {
-    	pim = new PanelIngresarMoneda();
+    public PanelExpendedor(PanelComprador n) {
+    	pim = new PanelIngresarMoneda(n);
         ppc = new PanelProductoComprado();
         pp = new PanelProductos();
-        pnp = new PanelNumPad();
+        pnp = new PanelNumPad(n);
         prv = new PanelRecibirVuelto();
         pr = new PanelRellenar();
         this.setBackground(Color.LIGHT_GRAY);

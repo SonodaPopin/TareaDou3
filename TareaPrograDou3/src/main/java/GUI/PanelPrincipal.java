@@ -8,8 +8,8 @@ public class PanelPrincipal extends JPanel {
     private PanelExpendedor exp;
 
     public PanelPrincipal() {
-        exp = new PanelExpendedor();
         com = new PanelComprador();
+        exp = new PanelExpendedor(com);
 
         this.setLayout(null);
         this.setBounds(0,0,1080,720);

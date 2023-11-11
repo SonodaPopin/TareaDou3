@@ -5,9 +5,11 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class PanelNumPad extends JPanel implements MouseListener{
-    PanelNumPad(){
+	PanelComprador n;
+    PanelNumPad(PanelComprador n){
         this.setBounds(10,250,110,180);
         this.addMouseListener(this);
+        this.n = n;
     }
     @Override
     protected void paintComponent(Graphics g) {
@@ -47,6 +49,7 @@ public class PanelNumPad extends JPanel implements MouseListener{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("hola");	
+		n.siNumPad();
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {	
