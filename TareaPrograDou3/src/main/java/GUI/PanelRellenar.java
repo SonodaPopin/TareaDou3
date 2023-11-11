@@ -4,7 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Clase que representa el panel del nombre del expendedor, que ademas sirve para rellenar este
+ */
 public class PanelRellenar extends JPanel implements MouseListener{
+	/**
+	 * Método constructor que crea el panel
+	 */
     PanelRellenar(){
         this.setBounds(205,25,250,50);
         this.addMouseListener(this);

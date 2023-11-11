@@ -4,7 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Clase que representa el panel en donde uno recibe las monedas de vuelto
+ */
 public class PanelRecibirVuelto extends JPanel implements MouseListener{
+	/**
+	 * Método constructor que crea el panel
+	 */
     PanelRecibirVuelto(){
         this.setBounds(10,470,110,110);
         this.addMouseListener(this);

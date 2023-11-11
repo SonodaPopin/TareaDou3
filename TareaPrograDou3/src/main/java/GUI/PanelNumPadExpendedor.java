@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Clase que representa un panel de numeros de un exéndedor
+ * Clase que representa un panel de numeros de un expendedor en el comprador
  */
 public class PanelNumPadExpendedor extends JPanel {
 	PanelComprador n;

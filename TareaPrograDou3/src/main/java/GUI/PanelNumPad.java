@@ -4,9 +4,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Clase que representa el numpad del expendedor
+ */
 public class PanelNumPad extends JPanel implements MouseListener{
+<<<<<<< HEAD
 	PanelComprador n;
     PanelNumPad(PanelComprador n){
+=======
+    /**
+     * Método constructor que crea el panel
+     */
+    PanelNumPad(){
+>>>>>>> c5495c414f3078cffb7d0f1f9a011a516d773b2d
         this.setBounds(10,250,110,180);
         this.addMouseListener(this);
         this.n = n;
@@ -33,6 +43,14 @@ public class PanelNumPad extends JPanel implements MouseListener{
         drawNumber(g, "9", 75, 105);
         drawNumber(g, "0", 40, 140); 
     }
+
+    /**
+     * Método que dibuja numeros
+     * @param g los graficos del objeto
+     * @param number el numero que se quiere dibujar
+     * @param x la coordenada horizontal en la que se quiere poner el numero en el panel
+     * @param y la coordenada vertical en la que se quiere poner el numero en el panel
+     */
     private void drawNumber(Graphics g, String number, int x, int y) {
 
         g.setColor(Color.WHITE);
