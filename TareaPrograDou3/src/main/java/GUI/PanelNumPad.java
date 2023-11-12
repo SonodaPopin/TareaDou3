@@ -9,8 +9,10 @@ import java.awt.event.*;
  */
 public class PanelNumPad extends JPanel implements MouseListener{
 	PanelComprador n;
+
     /**
      * Método constructor que crea el panel
+     * @param n PanelComprador que se quiere modificar
      */
     PanelNumPad(PanelComprador n){
         this.setBounds(10,250,110,180);

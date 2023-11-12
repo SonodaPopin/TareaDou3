@@ -10,8 +10,10 @@ import java.awt.event.MouseListener;
  */
 public class PanelIngresarMoneda extends JPanel implements MouseListener{
 	PanelComprador n;
+
 	/**
 	 * Método constructor que crea el panel
+	 * @param n PanelComprador que se quiere modificar
 	 */
     PanelIngresarMoneda(PanelComprador n){
         this.setBounds(10,100,110,110);

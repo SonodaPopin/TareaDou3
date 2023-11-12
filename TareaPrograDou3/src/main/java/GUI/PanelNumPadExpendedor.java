@@ -11,7 +11,7 @@ public class PanelNumPadExpendedor extends JPanel {
 
     /**
      * Método constructor que crea el panel
-     * @param n
+     * @param n PanelComprador que se quiere modificar
      */
     PanelNumPadExpendedor(PanelComprador n){
         this.setBounds(70,160,400,400);

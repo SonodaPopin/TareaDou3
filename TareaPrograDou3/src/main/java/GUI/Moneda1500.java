@@ -11,7 +11,7 @@ public class Moneda1500 extends JPanel implements MouseListener{
 	PanelComprador n;
 	/**
 	 * Método constructor que crea el panel
-	 * @param n
+	 * @param n PanelComprador que se quiere modificar
 	 */
     Moneda1500(PanelComprador n) {
         this.setBackground(Color.GRAY);
