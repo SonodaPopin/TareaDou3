@@ -8,6 +8,11 @@ import java.awt.*;
  */
 public class PanelNumPadExpendedor extends JPanel {
 	PanelComprador n;
+
+    /**
+     * Método constructor que crea el panel
+     * @param n
+     */
     PanelNumPadExpendedor(PanelComprador n){
         this.setBounds(70,160,400,400);
         this.setLayout(new GridLayout(4, 3));
@@ -52,9 +57,15 @@ public class PanelNumPadExpendedor extends JPanel {
         this.add(cero);
         this.add(enter);
     }
+    /**
+     * Método que hace visible al panel del numpad
+     */
     public void mostrar() {
     	this.setVisible(true);
     }
+    /**
+     * Método que hace invisible al panel del numpad
+     */
     public void esconder() {
     	this.setVisible(false);
     }

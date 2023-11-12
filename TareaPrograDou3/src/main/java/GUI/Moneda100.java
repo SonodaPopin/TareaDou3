@@ -4,8 +4,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Clase que representa el panel de una moneda de valor 100
+ */
 public class Moneda100 extends JPanel implements MouseListener{
 	PanelComprador n;
+
+	/**
+	 * Método constructor que crea el panel
+	 * @param n
+	 */
     Moneda100(PanelComprador n) {
         this.setBackground(Color.GRAY);
         this.setBounds(70,160,200,200);
@@ -23,10 +31,18 @@ public class Moneda100 extends JPanel implements MouseListener{
         g.setFont(font);
         g.drawString("$100", 60, 110);
     }
+
+	/**
+	 * Método que hace visible al panel, ademas de hacer que se pueda interactuar con este
+	 */
     public void mostrar() {
     	this.setVisible(true);
     	this.addMouseListener(this);
     }
+
+	/**
+	 * Método que hace invisible al panel, ademas de hacer que se deje de poder interactuar con este
+	 */
     public void esconder() {
     	this.setVisible(false);
     	this.removeMouseListener(this);

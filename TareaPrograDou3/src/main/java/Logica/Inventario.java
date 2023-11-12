@@ -27,4 +27,13 @@ public enum Inventario {
     public static int getPrecio(int a) {
         return Inventario.values()[a].precio;
     }
+
+    /**
+     * Método para obtener el precio de un producto
+     * @param a producto cuyo precio se quiere obtener
+     * @return nombre del producto
+     */
+    public static String getNombre(int a){
+        return Inventario.values()[a].name();
+    }
 }
